@@ -20,7 +20,7 @@ A Logical Access Control System (LACS) is an automated system that controls a us
 > * Supports the use of encryption and digital signature services to encrypt and digitally sign data using the PIV card; and
 
 > * Enables strong authentication for remote users while leveraging the existing infrastructure.
-	</ul>
+	
 
 This playbook supports achievement of implementing a LACS at your organization. It primarily addresses solution architecture and components that enable PIV authentication PIV card, however, other authentication types (e.g., PIV biometric authentication) may be supported within your agency.
 
