@@ -15,7 +15,6 @@ $(function() {
 
 <script src="https://use.fontawesome.com/e20c671b68.js"></script>
 -----------------------------------------------------------
-TEST
 
 Implementing a LACS solution requires a well-defined solution design backed by measurable requirements that dictate how the solution should function when it is complete. While there are many potential implementation paths that an agency could choose to follow, there are several common areas that can affect the overall success and use of LACS solutions. The checklist blow provides you with a list of common activities that should occur.
 
