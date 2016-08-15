@@ -50,23 +50,23 @@ navigation:
   url: 1_step-1
   internal: true
   coll: false
-- text: Step 2 - Plan Solution
+- text: Step 2 - Plan
   url: 2_step-2
   internal: true
   coll: false
-- text: Step 3 - Design Solution
+- text: Step 3 - Design
   url: 3_step-3
   internal: true
   coll: false
-- text: Step 4 - Build Architecture
+- text: Step 4 - Build
   url: 4_step-4
   internal: true
   coll: false
-- text: Step 5 - Implement Architecture
+- text: Step 5 - Implement
   url: 5_step-5
   internal: true
   coll: false
-- text: Step 6 - Operate and Maintain Solution
+- text: Step 6 - Operate and Maintain
   url: 6_step-6
   internal: true
 - text: Contribute
