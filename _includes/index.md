@@ -7,7 +7,7 @@
 
 A Logical Access Control System (LACS) is an automated system that controls a user‘s ability to access one or more computer system resources such as a workstation, network, application, or database. A LACS validates a user’s identity through some mechanism such as a PIN, card, biometric, or other token. Based on the selected implementation path, it also grants or denies user access to resources based on pre-defined criteria, such as affiliation with the organization, role, or individual privileges granted to further the agency‘s mission. A LACS solution, includes the following characteristics:
 
-> * Provides high assurance of user identity while allowing streamlined access across multiple applications using a single credential;</span></li>
+> * Provides high assurance of user identity while allowing streamlined access across multiple applications using a single credential;
 
 > * Reduces administrative burden on the part of resource owners and administrators by minimizing the need to manually manage user accounts and access privileges;
 
