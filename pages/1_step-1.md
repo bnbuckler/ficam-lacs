@@ -1,6 +1,6 @@
 ---
 layout: page_collection
-title: Step 1 - Identify Common Logical Access Scenarios
+title: Step 1 - Establish Program Governance
 permalink: /1_step-1/
 ---
 <script>
@@ -15,51 +15,36 @@ $(function() {
 
 <script src="https://use.fontawesome.com/e20c671b68.js"></script>
 -----------------------------------------------------
+In order for your agency to align your LACS infrastructure with the FICAM architecture, existing policies, processes, and technologies may need to be changed. You should evaluate your agency’s logical access policies and identify potential gaps where revisions, updates, and new policies and/or standards are needed to drive the changes identified in the FICAM architecture gap analysis for logical access. Your agency may need to consider establishing working groups and/or cross functional teams within the overall ICAM  governance structure to directly support LACS projects. This approach ensures that a responsible party is established to assess, manage, and maintain LACS policies and procedures over time.
 
-When implementing a LACS solution for PIV-based access across an enterprise, there are a number of common scenarios that the solution must be capable of supporting. This section identifies and discusses two of these common scenarios – network logon and client authentication to servers.
+While each agency is unique in the maturity of its logical access policies, there are a number of common topics that should be incorporated to support the LACS effort. The checklist below includes a list of the common governance efforts and describes how agencies might consider using them as a means to support compliance and overcome implementation hurdles.
 
-## <span style="color: #0C5C89"><a name="plan"></a>**Checklist**</span> 
+## <span style="color: #0C5C89">**Checklist**</span>
 
-> <i class="fa fa-check-square-o"></i> &nbsp;**Document LACS Use Cases.** Document detailed LACS use cases, which the designed solution should address in the build phase below. These models should seek to capture existing manual processes that will be automated, along with any exception process workflows that are not part of primary workflow that addresses a large portion of your enterprise’s processes.
+> <i class="fa fa-check-square-o"></i> &nbsp;**Issue Policy Memorandum: Continued Implementation of HSPD-12.** Agency-level policy, as required by <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf" target="_blank">  M-11-11 </a>, that includes provisions for several items related to LACS, including enforcing the use of PIV cards for authentication to networks and applications and accepting PIV credentials issued by other federal agencies for logical access. 
 
-<div id="accordion" markdown="1">
+> <i class="fa fa-check-square-o"></i> &nbsp;**Identify common logical access scenarios.** Establish guidance reflecting agency-level decisions for handling common logical access problem scenarios, such as granting access when a user forgets/loses his or her PIV card or forgets the personal identification number (PIN), requires mobile/remote access and does not have access to a smart card reader, and hardware malfunction preventing use of the PIV card.
 
-### Network Logon
-<div markdown="1">
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define agency-level security benchmarks.** Implement additional security benchmarks, beyond federal standards and guidance, for internally owned and operated IT resources to require use of LACS services and authentication tools.
 
-Network logon is the process through which agency users utilize their PIV cards to access an agency‘s computer networks and shared information systems. Successfully logging onto an agency‘s network using a PIV card is reliant on proper configuration of agency infrastructure and LACS solution components. The process involved in logging onto an agency network involves the user presenting a PIV-based authentication certificate to the network‘s domain controller, validation of the certificate through CRL, OCSP, and SCVP processes, and  matching of the  user‘s identity to  one recognized  and accepted by the network‘s identity repository. When implementing network logon capabilities agencies should consider the following challenges:
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define roles and responsibilities for cross-functional working groups.** Establish roles and responsibilities for cross functional working groups to facilitate collaboration and achievement of stated objectives between members from multiple groups, offices, and bureaus/components within the agency.
 
-> * **Extracting and matching User Principal Name (UPN).** The UPN must be extracted from the user authentication certificate and matched to an identity stored in the network‘s identity repository (e.g., Microsoft Active Directory, Radiant Logic Virtual Directory Service). This process ensures that the identity repository does not store the certificate information, but possesses the key attribute required for certificate mapping. Alternatively, the certificate could be stored within the identity repository and compared with the live authentication certificate presented. If the UPN cannot be extracted from the certificate or matched with an existing identity, then the authentication attempt will fail.
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define enterprise data and attribute format standards.** Define standard data formats for identity and entitlement attributes to streamline provisioning and application integration processes. 
 
-> * **Achieving SSO.** It is possible to achieve SSO through network logon by passing identity assertions in the form of cookies, Kerberos tickets, or encrypted Hypertext Transfer Protocol (HTTP) headers to applications, or through agent-based authentication (i.e., through use of an Access Manager). The application handles the identity assertion and need not process the user's authentication certificate.
+> <i class="fa fa-check-square-o"></i> &nbsp;**Determine trusted authoritative sources.** Define authoritative sources for identity and entitlement attributes to ensure access to accurate, reliable information. Authoritative sources may include HR, Personnel Security, Payroll, or other systems.
 
-For configuration and developer guides to support network logon implementation at your agency, please visit the PIV Authentication Playbook site.
+> <i class="fa fa-check-square-o"></i> &nbsp;**Determine core user identity attributes.** Define a core set of attributes that are required to uniquely identify an individual at an enterprise level to ensure consistency between the authoritative sources, LACS infrastructure, and IT resources.
 
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define baseline user privileges for IT Access.** Can be accomplished at various levels within your agency and should be considered where significant efficiencies can be achieved. When linked to an automated provisioning capability, new users can be granted access to a large number of applications automatically, based on a well-defined set of baseline needs.
 
-<h3><span>ROI</span></h3>
-<p><span>Enabling remote access servers and virtual private network (VPN) clients to accept the PIV card not only satisfies relevant security requirements related to remote access  but also offers significant benefits over separate tokens or devices. Use of the PIV card eliminates the costs and administrative burden of operating a separate token infrastructure and enables an agency’s users to take advantage of the digital signature and encryption capabilities of the PIV card when working remotely.</span></p>
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define a stakeholder messaging strategy.** Allows your agency to identify stakeholders and understand their individual motivations, and business drivers. Knowing these characteristics allows you to tailor multiple custom messages, which will improve adoption and overall buy-in. 
 
-</div>
+> <i class="fa fa-check-square-o"></i> &nbsp;**Determine staffing strategy.** Develop a plan/strategy to rotate/reallocate staff members whose positions may be automated (i.e., electronic account creation) as part of the LACS effort.
 
-</div>
+> <i class="fa fa-check-square-o"></i> &nbsp;**Define agency-level privacy requirements.** Determine if existing privacy and data protection requirements/guidelines are sufficient to address privacy concerns associated with LACS automation and data sharing or if additional privacy requirements are needed for specific LACS services.
 
-### Client Authentication to Servers
-<div markdown="1">
 
-Client authentication to servers is the process through which users utilize their PIV cards to access an agency‘s IT resources that reside on web or application servers. Successfully accessing an agency‘s IT resources through a web or application server using a PIV card is reliant on proper configuration of agency infrastructure and LACS solution components. The process through which the authentication occurs is very similar to the process for logging on to an agency‘s network, whereby the user‘s authentication certificate is validated by the server, and the user‘s identity matched to an existing identity within the identity repository.
 
-When implementing a LACS solution agencies should consider enabling two-way Transport Layer Security (TLS) to support client authentication. Also known as mutual TLS authentication, this allows a TLS client to confirm the identity of the TLS server, and vice versa as a means of supporting cross-certificate trust. The TLS client communicates the identity of the user via the authentication certificate to the application or web server.
 
-</div>
-</div>
 
-<br>
-
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
-
-<h3><span>Implementation Tip</span></h3>
-<p><span>While transitioning an agency’s networks and applications to support PIV card logon as part of a LACS effort agencies should consider implementing short term transitional solutions to help mitigate the risk of inadvertently causing users to lose access to IT resources. An example of such a solution is acceptance of multiple credentials (e.g., username/password, PIV card, token, etc.) during the transitional period. This ensures that users can continue to logon using the legacy authentication process while preparing for and transitioning to the target state PIV credential authentication process.</span></p>
-
-</div> 
 
