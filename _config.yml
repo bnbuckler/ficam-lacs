@@ -46,29 +46,50 @@ navigation:
   url: index.html
   internal: true
   coll: false
-- text: Step 1 - Identify Common Logical Access Scenarios
+- text: Step 1 - Establish Program Governance
   url: 1_step-1
   internal: true
   coll: false
-- text: Step 2 - Plan
+- text: Step 2 - Secure Program Funding
   url: 2_step-2
   internal: true
   coll: false
-- text: Step 3 - Design
+- text: Step 3 - Develop a Deployment Schedule
   url: 3_step-3
   internal: true
   coll: false
-- text: Step 4 - Build
+- text: Step 4 - Plan for Application Integration
   url: 4_step-4
   internal: true
   coll: false
-- text: Step 5 - Implement
+- text: Step 5 - Develop Pilot Implementation
   url: 5_step-5
   internal: true
   coll: false
-- text: Step 6 - Operate and Maintain
+- text: Step 6 - Choose Solution Architecture
   url: 6_step-6
   internal: true
+  coll: false
+- text: Common Design Characteristics
+  url: characteristics
+  internal: true
+  coll: false
+- text: Step 7 - Configure Systems for Implementation
+  url: 7_step-7
+  internal: true
+  coll: false
+- text: Step 8 - Deploy Solution Components
+  url: 8_step-8
+  internal: true
+  coll: false
+- text: Step 9 - Integrate Your Applications
+  url: 9_step-9
+  internal: true
+  coll: false
+- text: Common Logical Access Scenarios
+  url: scenarios
+  internal: true
+  coll: false
 - text: Contribute
   url: contribute
   internal: true
