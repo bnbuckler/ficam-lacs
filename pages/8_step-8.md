@@ -1,6 +1,6 @@
 ---
 layout: page_collection
-title: Deploy Solution Components
+title: Step 8 - Deploy Solution Components
 permalink: 8_step-8
 ---
 <script>

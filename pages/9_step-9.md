@@ -1,6 +1,6 @@
 ---
 layout: page_collection
-title: Integrate Your Applications
+title: Step 9 - Integrate Your Applications
 permalink: 9_step-9
 ---
 <script>

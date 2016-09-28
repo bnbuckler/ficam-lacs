@@ -1,6 +1,6 @@
 ---
 layout: page_collection
-title: Configure Systems for Implementation
+title: Step 7 - Configure Systems for Implementation
 permalink: 7_step-7
 ---
 <script>
